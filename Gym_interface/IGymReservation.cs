@@ -6,8 +6,8 @@ namespace Gym_interface
 {
     internal interface IGymReservation
     {
-        string getContactName();
-        int getReservationTime();
+        string getContactName { get; }
+        int getReservationTime { get; }
         int calculatePriceToPay();
     }
 }
