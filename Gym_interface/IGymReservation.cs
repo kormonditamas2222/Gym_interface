@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Gym_interface
 {
-    internal interface IGymReservation
+    public interface IGymReservation
     {
         string getContactName { get; }
         int getReservationTime { get; }

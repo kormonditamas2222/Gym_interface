@@ -4,13 +4,15 @@ using System.Text;
 
 namespace Gym_interface
 {
-    internal class Gym
+    public class Gym
     {
         List<IGymReservation> reservations;
         public Gym()
         {
             reservations = [];
         }
+
+        public IReadOnlyList<IGymReservation> Reservations => reservations.AsReadOnly();
 
         public bool addReservation(IGymReservation reservation)
         {

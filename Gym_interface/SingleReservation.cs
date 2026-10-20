@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Gym_interface
 {
-    internal class SingleReservation : IGymReservation
+    public class SingleReservation : IGymReservation
     {
         string contactName;
         int reservationTime;
