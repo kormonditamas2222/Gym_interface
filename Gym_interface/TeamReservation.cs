@@ -19,6 +19,7 @@ namespace Gym_interface
         public string getContactName => contactName;
 
         public int getReservationTime => reservationTime;
+        public IReadOnlyList<string> TeamMembers => teamMembers.AsReadOnly();
 
         public int calculatePriceToPay()
         {
